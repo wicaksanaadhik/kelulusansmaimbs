@@ -1,0 +1,105 @@
+body {   /* merupakan badan dari sebuah website  */
+	font: 14px/15px montserrat, sans-serif;   /* ukuran huruf & gaya huruf */
+	color: black;   /* warna pada tulisan website */
+	background-image: url(IMG20200216143145.jpg);   /* background utama website */
+}
+
+.cointainer {   /* untuk mengelompokan semua elemen */
+	width: 850px;   /* besar cointainer website itu sendiri */
+	margin: auto;   /* menyesuaikan tata letak */
+	background-color: white;   /* memberi warna pada cointainer */
+}
+
+.header {   /* untuk mengelompokan judul dan link */
+	padding: 10px;   /* memberikan jarak */
+	padding-bottom: 5px;   /* memberikan jarak ke bawah pada website */
+}
+
+.header table {   /* class table */
+	color: black;   /* warna hitam pada table */
+	border-left-color: black;   /* warna black pada  kiri border  */
+	border-right-color: black;   /* warna black pada kanan border */
+	border-bottom-color: black;   /* warna black pada bawah border */
+	border-top-color: black;   /* warna black pada atas border */
+	float: right;   /* membawa sebuat tabel ke arah kanan */
+	padding-right: 5px;   /* memberikan jarak dengan cointainer kanan */
+	padding-left: 5px;   /* memberikan jarak dengan cointainer kiri */
+}
+
+img {   /* sebuah gambar yang akan di atur */
+	height: 180px;   /* tinggi gambar dalam cointainer */
+	width: 180px;   /* lebar gambar dalam cointainer */
+	float: left;   /* membawa gambar ke arah kiri */
+	margin: 5px;   /* mengatur tata letak */
+}
+
+.header ul li {   /* class untuk ul li */
+	display: inline-block;   /* membuat tulisan sejajar */
+	margin-top: 10px;   /* memberikan jarak tulisan ke bagian atas */
+	margin-right: 15px;   /* memberikan jarak tulisan ke arah kanan */
+	font-size: 14px;   /* memberikan ukuran huruf */
+	float: left;   /* membawa tulisan ke kiri */
+}
+
+.header a{   /* class untuk link */
+	text-decoration: none;   /* menghilangkan garis bawah pada huruf */
+	color: darkseagreen;   /* memberikan warna hitam */
+}
+
+.header a:hover {
+	background-color: darkslategray;   /* memberikan warna hitam jika di sorot */
+	color: white;   /* memberikan tulisan menjadi putih jika di sorot */
+}
+
+.cari {   /* class untuk cari */
+	float: right;   /* membawa ke arah kanan */
+	padding-right: 5px;   /* memberikan jarak dengan cointainer kanan */
+	background-color: darkslategray;   /* memberikan warna black  */
+}
+
+.hero {   /* class hiro maks udnya nama gambar */
+	height: 300px;   /* memberikan tinggi pada sebuah gambar */
+	background-image: url(Sambutan.jpg);   /* memanggil gambar di folder */
+	background-size: cover;   /* menyesuaikan sebuah gambar */
+	background-position: 10px  -960px;   /* merapihkan gambar */
+	border-top: 5px black;   /* memberikan warna garis gambar */
+	border-bottom: 5px black;   /* memberikan warna garis  */
+}
+
+.pengumuman {   /* sebagai class amikom dalam artian gambar */
+	margin: 10px;   /* mengatur tata letak */
+
+}
+
+.videosambutan {	/*sebagai class video */
+	color: darkseagreen;   /* memberikan warna hitam */
+	margin: 10px;   /* mengatur tata letak */
+	line-height:1.5;
+	}
+
+
+.footer {   /* memberikan class pada footer */
+	background-color: darkslategray;   /* memberikan warna hitam background */
+	padding: 9px;   /* memberikan jarak */
+}
+
+.footer .copy {   /* memberikan class footer dan class copy */
+	color: white;   /* memberikan warna tulisan menjadi putih */
+	text-align: center;   /* membawa tulisan ke tengah supaya rapih */
+}
+
+
+/* clearfix*/   /* hanya sebuah komentar biasa yang tidak berpengaruh */
+
+.cf:before,   /* untuk merapihkan supaya box tidak berantakan */
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}   /* untuk merapihkan supaya box tidak berantakan */
